@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/nav_home" android:icon="@android:drawable/ic_menu_camera"
+            android:title="Home" />
+        <item android:id="@+id/nav_hostel" android:icon="@android:drawable/ic_menu_gallery"
+            android:title="Hostel / PG" />
+        <item android:id="@+id/nav_house" android:icon="@android:drawable/ic_menu_slideshow"
+            android:title="House" />
+        <item android:id="@+id/nav_project" android:icon="@android:drawable/ic_menu_manage"
+            android:title="Project" />
+
+        <item android:id="@+id/nav_rent" android:icon="@android:drawable/ic_menu_manage"
+            android:title="Rent" />
+        <item android:id="@+id/nav_post" android:icon="@android:drawable/ic_menu_share"
+            android:title="Post Ads" />
+        <item android:id="@+id/nav_inbox" android:icon="@android:drawable/ic_menu_share"
+            android:title="Inbox" />
+        <item android:id="@+id/nav_outbox" android:icon="@android:drawable/ic_menu_share"
+            android:title="Outbox" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+
+            <item android:id="@+id/nav_helpline" android:icon="@android:drawable/ic_menu_send"
+                android:title="HelpLine" />
+            <item android:id="@+id/nav_feedback" android:icon="@android:drawable/ic_menu_send"
+                android:title="Feedback" />
+            <item android:id="@+id/Logout" android:icon="@android:drawable/ic_menu_send"
+                android:title="Logout" />
+        </menu>
+    </item>
+
+</menu>

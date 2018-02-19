@@ -1,0 +1,44 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Wait Till We Fetch Your Location"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimaryDark"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="50dp"/>
+
+
+    <com.dd.CircularProgressButton
+        android:id="@+id/circularButton1"
+        android:layout_width="200dp"
+        android:layout_height="64dp"
+
+        android:textColor="@color/cpb_white"
+        android:textSize="20sp"
+        app:cpb_textComplete="Dehradun"
+        android:layout_centerInParent="true"
+        app:cpb_textIdle="Fetching" />
+
+
+    <com.example.myself.findme.util.CircleProgress
+        android:id="@+id/progress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        app:color1="@android:color/holo_red_light"
+        app:color2="@android:color/holo_green_light"
+        app:color3="@android:color/holo_blue_light" />
+
+
+
+
+</RelativeLayout>
