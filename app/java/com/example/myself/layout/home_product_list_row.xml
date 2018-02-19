@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+
+    >
+
+    <ImageView
+        android:layout_width="130dp"
+        android:layout_height="150dp"
+        android:id="@+id/imageview"
+        android:src="@drawable/mobile"
+        android:layout_gravity="center"
+        android:scaleType="fitXY"
+
+        />
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:gravity="center"
+
+        android:text="Flat 25% off"
+        android:id="@+id/tv1"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:gravity="center"
+        android:id="@+id/tv2"
+        android:text="Gold, Diamonds, Silver"
+        android:typeface="sans"
+        android:textColor="#8f0"/>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Malabar Gold and Diamonds"
+        android:textColor="#ccc"
+        android:lines="2"
+        android:typeface="monospace"
+        android:id="@+id/tv3"
+        android:gravity="center"/>
+
+</LinearLayout>

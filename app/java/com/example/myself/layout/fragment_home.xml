@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+      <com.daimajia.slider.library.SliderLayout
+           android:id="@+id/home_slider"
+           android:layout_width="match_parent"
+           custom:pager_animation="Accordion"
+           custom:auto_cycle="true"
+           custom:indicator_visibility="visible"
+           custom:pager_animation_span="1100"
+           android:layout_height="200dp"/>
+
+              <android.support.v7.widget.RecyclerView
+                   android:id="@+id/home_reycler_view_category"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   />
+
+        <android.support.v7.widget.RecyclerView
+                   android:id="@+id/home_recycler_view_main"
+                   android:layout_width="match_parent"
+
+                   android:layout_height="wrap_content" />
+
+
+         <android.support.v7.widget.RecyclerView
+                android:id="@+id/home_recycler_view_trend"
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+
+
+
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+
+
+</FrameLayout>

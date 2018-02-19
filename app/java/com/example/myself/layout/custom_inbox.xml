@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+        <com.github.ivbaranov.mli.MaterialLetterIcon
+            android:id="@+id/Icon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            app:mli_initials="false"
+            app:mli_initials_number="2"
+            app:mli_letter="A"
+            app:mli_letter_color="#fff"
+            app:mli_letter_size="26"
+            app:mli_letters_number="1"
+            app:mli_shape_color="#000"
+            app:mli_shape_type="circle" />
+        
+
+            <TextView
+                android:id="@+id/From"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Andy Brown"
+                android:textColor="#000"
+                android:layout_alignTop="@+id/Icon"
+                android:layout_toRightOf="@+id/Icon"
+                />
+            <TextView
+                android:id="@+id/Message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#aaa"
+                android:layout_marginTop="5dp"
+                android:lines="1"
+
+                android:layout_below="@+id/From"
+                android:layout_alignLeft="@+id/From"
+                android:text="Hey Joe, we have next project for this summer"
+
+                />
+
+    <TextView
+        android:id="@+id/Date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorAccent"
+        android:layout_marginTop="10dp"
+        android:lines="1"
+
+        android:layout_marginRight="10dp"
+
+        android:layout_alignParentRight="true"
+
+        android:text="12/1/2016"
+
+        />
+    
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/Icon"
+        android:background="#ccc"></View>
+
+</RelativeLayout>

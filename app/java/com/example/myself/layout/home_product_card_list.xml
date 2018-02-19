@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:card_view="http://schemas.android.com/tools"
+
+    android:orientation="vertical"
+    android:paddingBottom="7dp">
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginBottom="0dp"
+
+        card_view:cardBackgroundColor="#fff"
+        card_view:cardElevation="0dp">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/header"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/Title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.7"
+                    android:ellipsize="marquee"
+                    android:padding="15dp"
+                    android:singleLine="true"
+                    android:text="Fashion and LifeStyle  "
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3"
+                    android:padding="15dp"
+                    android:singleLine="true"
+                    android:text="VIEW ALL"
+                    android:textColor="#0000ff"
+                    android:textSize="16sp"
+
+                    />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="#ccc">
+
+            </View>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="250dp" />
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="#ccc"/>
+
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

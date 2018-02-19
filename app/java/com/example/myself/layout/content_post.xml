@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.myself.findme.activity.PostActivity"
+    tools:showIn="@layout/activity_post">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:id="@+id/bottom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="5dp"
+
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:background="@drawable/border">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
+                    android:text="Post Category"
+                    android:textSize="18sp"
+                    />
+
+                <Spinner
+                    android:id="@+id/Category"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:entries="@array/category"
+                    android:gravity="top"
+                    android:layout_marginTop="5dp"
+                    android:hint="Address"
+                    android:background="@drawable/border_search"/>
+
+
+
+                <EditText
+                    android:id="@+id/Title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:padding="10dp"
+                    android:layout_marginTop="10dp"
+                    android:hint="Title"
+                    android:background="@drawable/border_search"/>
+
+                <EditText
+                    android:id="@+id/Area"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:padding="10dp"
+                    android:layout_marginTop="5dp"
+                    android:hint="Area / Locality / Landmark"
+                    android:background="@drawable/border_search"/>
+
+                <EditText
+                    android:id="@+id/Address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:padding="10dp"
+                    android:lines="3"
+                    android:gravity="top"
+                    android:layout_marginTop="5dp"
+                    android:hint="Address"
+                    android:background="@drawable/border_search"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
+                    android:text="City"
+                    android:textSize="18sp"
+                    />
+                <Spinner
+                    android:id="@+id/City"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                     android:entries="@array/city"
+                    android:gravity="top"
+                    android:layout_marginTop="5dp"
+                    android:hint="Address"
+                    android:background="@drawable/border_search"/>
+
+                <EditText
+                    android:id="@+id/ShortTags"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:padding="10dp"
+                    android:lines="3"
+                    android:gravity="top"
+                    android:layout_marginTop="5dp"
+                    android:hint="Short Tags eg. 3BHK , 2 Story , Near Railway Station , Swimming Facilities"
+                    android:background="@drawable/border_search"/>
+
+                <EditText
+                    android:id="@+id/Description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:padding="10dp"
+                    android:lines="5"
+                    android:gravity="top"
+                    android:layout_marginTop="5dp"
+                    android:hint="Description"
+                    android:background="@drawable/border_search"/>
+
+
+                <EditText
+                    android:id="@+id/Price"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:padding="10dp"
+                    android:layout_marginTop="5dp"
+                    android:hint="Price"
+                    android:gravity="center_vertical"
+                    android:drawableLeft="@drawable/ic_rupee"
+                    android:background="@drawable/border_search"/>
+
+                <EditText
+                    android:id="@+id/Contact"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:padding="10dp"
+                    android:layout_marginTop="5dp"
+                    android:hint="Contact Number"
+                    android:background="@drawable/border_search"/>
+
+                <android.support.v7.widget.AppCompatButton
+                    android:id="@+id/btn_post"
+                    android:layout_below="@+id/bottom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/drawable_button"
+                    android:layout_gravity="center_horizontal"
+                    android:padding="12dp"
+                    android:inputType="phone"
+                    android:text="Post"
+                    android:textColor="#fff" />
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+
+
+</RelativeLayout>
